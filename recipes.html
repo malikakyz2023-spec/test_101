@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe List</title>
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🍽️ My Recipe List</h1>
+      <p class="subtitle">Save and manage your favorite recipes</p>
+    </header>
+
+    <section class="add-recipe">
+      <h2>Add a Recipe</h2>
+      <div class="form-group">
+        <label for="recipe-name">Recipe Name</label>
+        <input type="text" id="recipe-name" placeholder="e.g. Spaghetti Carbonara" />
+      </div>
+      <div class="form-group">
+        <label for="recipe-desc">Description</label>
+        <textarea id="recipe-desc" rows="3" placeholder="Brief description of the recipe..."></textarea>
+      </div>
+      <button id="add-btn">Add Recipe</button>
+      <p id="error-msg" class="error hidden">Please fill in both fields.</p>
+    </section>
+
+    <section class="recipe-list-section">
+      <h2>Recipes <span id="recipe-count" class="count">0</span></h2>
+      <ul id="recipe-list"></ul>
+      <p id="empty-msg" class="empty-msg">No recipes yet. Add one above!</p>
+    </section>
+  </div>
+
+  <script src="recipes.js"></script>
+</body>
+</html>
